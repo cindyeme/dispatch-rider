@@ -1,4 +1,4 @@
-# DispatchRider - - Find Nearby Dispatch Riders
+# DispatchRider - Find Nearby Dispatch Riders
 
 ## Overview
 
