@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DispatchRider | Riders</title>
+    <title>DispatchRider | Login</title>
     <meta
       name="description"
       content="Access a network of reliable dispatch riders or grow your delivery business with us"
@@ -99,7 +99,7 @@
                         <li class="nav-item">
                           <a
                             class="nav-link"
-                            href="about.html"
+                            href="about_.html"
                             id="navbarDropdown2"
                             role="button"
                             aria-expanded="false"
@@ -109,14 +109,14 @@
                         <li class="nav-item">
                           <a
                             class="nav-link"
-                            href="services.html"
+                            href="services_.html"
                             id="navbarDropdown3"
                             role="button"
                             aria-expanded="false"
                             >Services</a
                           >
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a
                             class="nav-link"
                             href="riders.html"
@@ -138,6 +138,15 @@
                   <ul
                     class="list-style-none right-btn d-flex align-items-center"
                   >
+                    <!-- <li>
+                                        <div class="search-area">
+                                            <a class="search-btn" href="#"><img src="assets/img/icon/search.svg" alt="icon-not-found"></a>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Search here.....">
+                                                <span class="input-group-text"><img src="assets/img/icon/search.svg" alt="icon-not-found"></span>
+                                            </div>
+                                        </div>
+                                    </li> -->
                     <li>
                       <a
                         class="theme_btn theme_btn_border style-2b d-none d-lg-inline-block"
@@ -184,15 +193,19 @@
           <li>
             <a href="index.html">Home</a>
           </li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about_.html">About</a></li>
           <li>
-            <a href="services.html">Services</a>
+            <a href="services_.html">Services</a>
           </li>
           <li>
             <a href="riders.html">Riders</a>
           </li>
-          <li><a href="register.html">Create rider account</a></li>
-          <li><a href="login.html">Log in</a></li>
+          <li>
+            <a href="register.html">Create rider account</a>
+          </li>
+          <li>
+            <a href="login.html">Log in</a>
+          </li>
         </ul>
       </nav>
       <!-- side-mobile-menu end -->
@@ -203,179 +216,130 @@
     <main>
       <!--slider-area start-->
       <section
-        class="page-title-area grey-bg-soft2 pt-280 pb-180 pt-lg-200 pt-md-160 pb-md-120 pt-xs-160 pb-xs-90"
+        id="slider-one"
+        class="grey-bg slider-area pos-rel pt-200 pb-80 pt-md-200 pt-xs-180 pb-xs-215"
       >
         <img
-          class="page-shape blog-shape-1 d-none d-xxl-inline-block"
-          src="assets/img/line/line-11.png"
-          alt="Page Shape"
+          class="slider-shape shape_01 d-none d-xxl-inline-block"
+          src="assets/img/line/line-1.svg"
+          alt=""
         />
         <img
-          class="page-shape shape_04 d-none d-md-inline-block"
+          class="slider-shape shape_02"
+          src="assets/img/line/line-baby-1.svg"
+          alt=""
+        />
+        <img
+          class="slider-shape shape_03"
+          src="assets/img/line/line-2.svg"
+          alt=""
+        />
+        <img
+          class="slider-shape shape_04 d-none d-md-inline-block"
           src="assets/img/shape/orange-1.svg"
-          alt="Page Shape"
+          alt=""
         />
         <img
-          class="page-shape shape_05 d-none d-xxl-inline-block"
+          class="slider-shape shape_05 d-none d-xxl-inline-block"
           src="assets/img/shape/round-line-a.svg"
-          alt="Page Shape"
+          alt=""
         />
-        <!-- <img class="page-shape shape_06 d-none d-lg-inline-block" src="assets/img/shape/berry-1.svg" alt="Page Shape"> -->
-        <!-- <img class="page-shape shape_07 d-none d-lg-inline-block" src="assets/img/slider/truck.svg" alt="Page Shape"> -->
         <img
-          class="page-shape shape_08 d-none d-lg-inline-block"
+          class="slider-shape shape_07 d-none d-lg-inline-block"
+          src="assets/img/shape/orange-2.svg"
+          alt=""
+        />
+        <img
+          class="slider-shape shape_08 d-none d-lg-inline-block"
           src="assets/img/shape/dot-a.svg"
-          alt="Page Shape"
+          alt=""
         />
-        <img
-          class="page-shape shape_09 d-none d-lg-inline-block"
-          src="assets/img/slider/nav-box.svg"
-          alt="Page Shape"
-        />
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8">
-              <div class="page-title-wrapper text-center">
-                <h4 class="styled-text theme-color mb-30">Riders</h4>
-                <h5 class="h1 page-title">
-                  Meet Our Dedicated Dispatch Riders
-                </h5>
+        <div class="main-slider main-slider-1" id="main-slider-1">
+          <div class="container mx-auto">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <div class="slider__content">
+                  <h4 class="styled-text">
+                    Welcome Back Boss
+                  </h4>
+                  <form class="register-form">
+                    <div class="find-area">
+                      <div class="input-group">
+                        <label for="email">Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter your email address"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Enter your password"
+                          required
+                        />
+                      </div>
+                      <button type="submit" class="theme_btn mt-4">
+                        Log in
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
+              <div class="col-lg-3"></div>
             </div>
+            <!--/.row-->
           </div>
+          <!--/.container-->
         </div>
       </section>
       <!--slider-area end-->
-      <!--dispatch_rider-team start-->
+
       <section
-        class="dispatch_rider-team position-relative pt-120 pb-90 pt-lg-80 pb-lg-50 pt-md-60 pb-md-30 pt-xs-60 pb-xs-30"
+        class="case-studies case-style-2 position-relative pt-150 pb-130 pt-md-60 pb-md-60 pt-xs-60 pb-xs-60"
       >
-        <img
-          class="team-shape2 tmshape-1"
-          src="assets/img/shape/round-line-a.svg"
-          alt=""
-        />
-        <img
-          class="team-shape2 tmshape-2"
-          src="assets/img/shape/border-line-1.svg"
-          alt=""
-        />
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-1.jpg"
-                    alt="team memeber"
-                  />
+          <div class="offer-bg">
+            <img
+              class="offer-shape offer-one"
+              src="assets/img/shape/pencil-2.svg"
+              alt="Offer Shape"
+            />
+            <img
+              class="offer-shape offer-two"
+              src="assets/img/shape/eclip-5.svg"
+              alt="Offer Shape"
+            />
+            <img
+              class="offer-shape offer-three"
+              src="assets/img/shape/box-2.svg"
+              alt="Offer Shape"
+            />
+            <div class="row align-items-center">
+              <div class="col-xl-8 col-lg-8">
+                <div class="propose-offer mb-30">
+                  <h2>
+                    Seamlessly connect with nearby dispatch riders for swift and
+                    reliable deliveries
+                  </h2>
                 </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Ebuka Okafor</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 text-lg-end text-center">
+                <div class="get-offer mb-30">
+                  <a href="index.html#main-slider-1" class="theme_btn"
+                    >Find Riders</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-2.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Victor Adigeb</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-3.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Jude Haanongon</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-4.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Kulater Terseer</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-5.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Taiwo Temitope Opeyemi</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-6.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Yusuf Aaron</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!--/.row-->
           </div>
-          <!--/.row-->
         </div>
-        <!--/.container-->
       </section>
-      <!--dispatch_rider-team end-->
     </main>
     <!--footer-area start-->
     <footer class="footer-area grey-bg pos-rel pt-100 pt-md-100 pt-xs-100 fix">
@@ -437,21 +401,16 @@
             <div class="col-lg-6 col-md-7">
               <div class="copyright mb-45 text-start text-md-start">
                 <p>
-                  ©
-                  <a
-                    href="https://www.linkedin.com/in/emerenini-cynthia-ngozi"
-                    target="_blank"
-                    >Cynthia E Ngozi</a
-                  >
-                  Copyright 2023 All Right Reserved
+                  © <a href="index.html">Cynthia E Ngozi</a> Copyright 2023 All
+                  Right Reserved
                 </p>
               </div>
             </div>
             <div class="col-lg-6 col-md-5 text-md-end">
               <div class="footer__widget mb-25">
                 <ul class="fot-list d-inline-block">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about_.html">About</a></li>
+                  <li><a href="services_.html">Services</a></li>
                   <li><a href="riders.html">Riders</a></li>
                 </ul>
               </div>
@@ -462,7 +421,7 @@
     </footer>
     <!--footer-area end-->
 
-    <a class="scrollUp" href="#"><i class="far fa-arrow-up"></i></a>
+    <a id="scroll" class="scrollUp" href="#"><i class="far fa-arrow-up"></i></a>
 
     <!-- JS here -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
