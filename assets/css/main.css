@@ -5431,12 +5431,12 @@ input.main-search-input:-ms-input-placeholder {
   }
 }
 
-.copic-team-wrapper .section-title {
+.dispatch_rider-team-wrapper .section-title {
   padding-right: 40px;
   padding-left: 40px;
 }
 @media (max-width: 767px) {
-  .copic-team-wrapper .section-title {
+  .dispatch_rider-team-wrapper .section-title {
     padding-left: 0;
     padding-right: 0;
   }
@@ -5456,10 +5456,10 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 .team-content {
-  background: linear-gradient(rgba(4, 27, 32, 0) 0%, #0d0d0d 100%);
-  background: -webkit-linear-gradient(rgba(4, 27, 32, 0) 0%, #0d0d0d 100%);
-  background: -moz-linear-gradient(rgba(4, 27, 32, 0) 0%, #0d0d0d 100%);
-  background: -o-linear-gradient(rgba(4, 27, 32, 0) 0%, #0d0d0d 100%);
+  background: linear-gradient(rgba(4, 27, 32, 0.3) 0%, #0d0d0d 100%);
+  background: -webkit-linear-gradient(rgba(4, 27, 32, 0.3) 0%, #0d0d0d 100%);
+  background: -moz-linear-gradient(rgba(4, 27, 32, 0.3) 0%, #0d0d0d 100%);
+  background: -o-linear-gradient(rgba(4, 27, 32, 0.3) 0%, #0d0d0d 100%);
   position: absolute;
   left: 0;
   right: 0;
@@ -5535,7 +5535,7 @@ input.main-search-input:-ms-input-placeholder {
   }
 }
 
-.copic-team-wrapper .bs-2::before {
+.dispatch_rider-team-wrapper .bs-2::before {
   background-image: url(../img/line/red-line-5.svg);
   left: 8px;
   top: 17px;
