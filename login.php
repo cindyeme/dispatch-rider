@@ -10,29 +10,9 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="site.html" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.ico"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Saira+Extra+Condensed:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+   
+    <?php require_once('includes/css-links.php') ?>
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/font.css" />
-    <link rel="stylesheet" href="assets/css/metisMenu.css" />
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/spacing.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
   <body>
@@ -424,19 +404,6 @@
     <a id="scroll" class="scrollUp" href="#"><i class="far fa-arrow-up"></i></a>
 
     <!-- JS here -->
-    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/main.js"></script>
+     <?php require_once('includes/js-links.php') ?>
   </body>
 </html>

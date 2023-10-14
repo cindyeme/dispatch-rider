@@ -10,29 +10,9 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="site.html" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.ico"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Saira+Extra+Condensed:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/font.css" />
-    <link rel="stylesheet" href="assets/css/metisMenu.css" />
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/spacing.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <?php require_once('includes/css-links.php') ?>
+
   </head>
 
   <body>
@@ -254,13 +234,15 @@
                   <h4 class="styled-text text-center">
                     Join Our Network of Dispatch Riders
                   </h4>
-                  <form class="register-form">
+                  <form class="register-form" method="POST" action="includes/register-handler.php">
                     <div class="find-area">
                       <div class="input-group">
                         <label for="fullname">Full name</label>
                         <input
                           type="text"
                           id="fullname"
+                          name="fullname"
+                          pattern="[A-Z a-z]+"
                           class="form-control"
                           placeholder="Enter your full name"
                           required
@@ -270,6 +252,8 @@
                         <label for="email">Email address</label>
                         <input
                           type="email"
+                          id="email"
+                          name="email"
                           class="form-control"
                           placeholder="Enter your email address"
                           required
@@ -279,6 +263,8 @@
                         <label for="phone">Phone number</label>
                         <input
                           type="number"
+                          id="phone"
+                          name="phone"
                           class="form-control"
                           placeholder="Enter your phone number"
                           required
@@ -286,7 +272,7 @@
                       </div>
                       <div class="input-group">
                         <label for="location">Location</label>
-                        <select id="location">
+                        <select id="location" name="location">
                           <option value="">Select location</option>
                           <option value="Imo">Imo</option>
                           <option value="Lagos">Lagos</option>
@@ -297,12 +283,14 @@
                         <label for="password">Password</label>
                         <input
                           type="password"
+                          id="password"
+                          name="password"
                           class="form-control"
                           placeholder="Enter a strong password"
                           required
                         />
                       </div>
-                      <button type="submit" class="theme_btn mt-4">
+                      <button type="submit" name="submit" class="theme_btn mt-4">
                         Become a rider
                       </button>
                     </div>
@@ -443,19 +431,6 @@
     <a id="scroll" class="scrollUp" href="#"><i class="far fa-arrow-up"></i></a>
 
     <!-- JS here -->
-    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <?php require_once('includes/js-links.php') ?>
   </body>
 </html>
