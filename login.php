@@ -1,198 +1,5 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DispatchRider | Login</title>
-    <meta
-      name="description"
-      content="Access a network of reliable dispatch riders or grow your delivery business with us"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="site.html" />
-   
-    <?php require_once('includes/css-links.php') ?>
-
-  </head>
-
-  <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
-    <!-- Content here -->
-    <!-- preloader -->
-    <div id="preloader">
-      <div class="preloader">
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <!-- preloader end  -->
-    <!-- header-area start -->
-    <header>
-      <div id="hideshow-sticky-menu">
-        <div
-          id="theme-menu-three"
-          class="main-header-area menu-style-3 pt-20 pb-10"
-        >
-          <div class="container-fluid">
-            <div class="row align-items-center justify-content-between">
-              <div class="col-xl-3 col-lg-2 col-6">
-                <div
-                  class="logo-area d-flex align-items-center justify-content-between"
-                >
-                  <div class="logo-img">
-                    <a href="index.html"
-                      ><img
-                        class="img-fluid"
-                        src="assets/img/logo/logo.svg"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-6 col-lg-7 text-start d-none d-lg-inline-block"
-              >
-                <nav id="topheader" class="navbar navbar-expand-lg">
-                  <div class="nav-container">
-                    <div
-                      class="collapse navbar-collapse"
-                      id="navbarSupportedContent"
-                    >
-                      <ul class="navbar-nav list-style-none">
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="index.html"
-                            id="navbarDropdown1"
-                            role="button"
-                            aria-expanded="false"
-                            >Home</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="about_.html"
-                            id="navbarDropdown2"
-                            role="button"
-                            aria-expanded="false"
-                            >About Us</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="services_.html"
-                            id="navbarDropdown3"
-                            role="button"
-                            aria-expanded="false"
-                            >Services</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="riders.html"
-                            id="navbarDropdown4"
-                            role="button"
-                            aria-expanded="false"
-                            >Riders</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="col-xl-3 col-lg-3 col-6">
-                <div
-                  class="right-nav d-flex align-items-center justify-content-end"
-                >
-                  <ul
-                    class="list-style-none right-btn d-flex align-items-center"
-                  >
-                    <!-- <li>
-                                        <div class="search-area">
-                                            <a class="search-btn" href="#"><img src="assets/img/icon/search.svg" alt="icon-not-found"></a>
-                                            <div class="input-group">
-                                                <input type="text" placeholder="Search here.....">
-                                                <span class="input-group-text"><img src="assets/img/icon/search.svg" alt="icon-not-found"></span>
-                                            </div>
-                                        </div>
-                                    </li> -->
-                    <li>
-                      <a
-                        class="theme_btn theme_btn_border style-2b d-none d-lg-inline-block"
-                        href="register.html"
-                      >
-                        Create rider account
-                      </a>
-                    </li>
-                     <li>
-                      <a
-                        class="theme_btn theme_btn_border text-white black-btn cta-btn d-none d-lg-inline-block"
-                        href="login.html"
-                      >
-                        Log in
-                      </a>
-                    </li>
-                  </ul>
-                  <div
-                    class="hamburger-menu d-md-inline-block d-lg-none text-right ml-15"
-                  >
-                    <a href="javascript:void(0);">
-                      <i class="far fa-bars"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /.theme-main-menu -->
-      </div>
-    </header>
-    <!-- header-area end -->
-
-    <!-- slide-bar start -->
-    <aside class="slide-bar">
-      <div class="close-mobile-menu">
-        <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
-      </div>
-
-      <!-- side-mobile-menu start -->
-      <nav class="side-mobile-menu">
-        <ul id="mobile-menu-active">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a href="about_.html">About</a></li>
-          <li>
-            <a href="services_.html">Services</a>
-          </li>
-          <li>
-            <a href="riders.html">Riders</a>
-          </li>
-          <li>
-            <a href="register.html">Create rider account</a>
-          </li>
-          <li>
-            <a href="login.html">Log in</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- side-mobile-menu end -->
-    </aside>
-    <div class="body-overlay"></div>
-    <!-- slide-bar end -->
-
+<?php $activePage = 'login'; require_once('includes/header.php'); ?>
+  
     <main>
       <!--slider-area start-->
       <section
@@ -243,12 +50,14 @@
                   <h4 class="styled-text text-center">
                     Welcome Back Boss
                   </h4>
-                  <form class="register-form">
+                  <form class="register-form login"  method="POST" action="includes/login-handler.php">
                     <div class="find-area">
                       <div class="input-group">
                         <label for="email">Email address</label>
                         <input
                           type="email"
+                          name="email" 
+                          id="email"
                           class="form-control"
                           placeholder="Enter your email address"
                           required
@@ -259,11 +68,18 @@
                         <input
                           type="password"
                           class="form-control"
+                          name="password" 
+                          id="password"
                           placeholder="Enter your password"
                           required
                         />
                       </div>
-                      <button type="submit" class="theme_btn mt-4">
+                       <div class="input-group d-flex align-items-end justify-content-end">
+                      <a href="#" class="float-right">Forgot Password?</a>
+                    </div>
+                      <div class="input-group mt-3">
+                      <div id="msg"></div></div>
+                      <button type="submit" name="submit" class="theme_btn mt-4">
                         Log in
                       </button>
                     </div>
@@ -321,89 +137,5 @@
         </div>
       </section>
     </main>
-    <!--footer-area start-->
-    <footer class="footer-area grey-bg pos-rel pt-100 pt-md-100 pt-xs-100 fix">
-      <img
-        class="fot-shape f-shape1 d-none d-xxl-inline-block"
-        src="assets/img/line/line-5.svg"
-        alt="Line Shape"
-      />
-      <img
-        class="fot-shape f-shape2"
-        src="assets/img/shape/dot-shape-1.svg"
-        alt="Dot Shape"
-      />
-      <img
-        class="fot-shape f-shape3 d-none d-xl-inline-block"
-        src="assets/img/shape/round-line-black-1.svg"
-        alt="Dot Shape"
-      />
-      <img
-        class="fot-shape f-shape4"
-        src="assets/img/shape/orange-4.svg"
-        alt="Dot Shape"
-      />
-      <div class="container">
-        <div class="row borders-grey pb-30">
-          <div
-            class="col-12 wow d-flex justify-content-center align-items-center fadeInUp2 animated"
-            data-wow-delay=".1s"
-          >
-            <div
-              class="footer__widget d-flex flex-column justify-content-center align-items-center mb-30"
-            >
-              <div class="footer-log mb-4">
-                <a href="index.html" class="logo">
-                  <img src="assets/img/logo/logo.svg" alt="Logo" />
-                </a>
-              </div>
-              <div class="social-links mb-25">
-                <a href="https://facebook.com/cynthiaengozi1" target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="https://twitter.com/cynthiaengozi1" target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/emerenini-cynthia-ngozi"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-              <span class="addres-details mb-25"
-                >No. 10 Peaceful Street, Melanin Avenue, Delivery Crescent
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="copy-right-area pt-50">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-7">
-              <div class="copyright mb-45 text-start text-md-start">
-                <p>
-                  © <a href="index.html">Cynthia E Ngozi</a> Copyright 2023 All
-                  Right Reserved
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-5 text-md-end">
-              <div class="footer__widget mb-25">
-                <ul class="fot-list d-inline-block">
-                  <li><a href="about_.html">About</a></li>
-                  <li><a href="services_.html">Services</a></li>
-                  <li><a href="riders.html">Riders</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--footer-area end-->
 
-    <a id="scroll" class="scrollUp" href="#"><i class="far fa-arrow-up"></i></a>
-
-    <!-- JS here -->
-     <?php require_once('includes/js-links.php') ?>
-  </body>
-</html>
+<?php require_once('includes/footer.php') ?>

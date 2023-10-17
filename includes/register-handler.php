@@ -34,13 +34,8 @@
 
             $sql = "INSERT INTO dispatch_rider(fullname, email, phone, location, password) VALUES ('$fullname', '$email', '$mobile', '$location', '$newPassword')";
             
-            // die($sql);
             // execute query
             $result = mysqli_query($conn, $sql);
-            // check if inserted
-            // print_r($result);
-            echo $result;
-            die('Query die!!!');
 
             if($result){
                 session_start(); // automatically logs the user in after registration.

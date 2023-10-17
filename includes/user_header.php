@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DispatchRider | <?php echo ($activePage === 'index') ? 'Home': echo ($activePage === 'about') ? 'About' : echo ($activePage === 'services') ? 'Services': echo ($activePage === 'riders') ? 'Riders':'' ?></title>
+    <title>DispatchRider | Profile</title>
     <meta
       name="description"
       content="Access a network of reliable dispatch riders or grow your delivery business with us"
@@ -90,7 +90,6 @@
                           <a
                             class="nav-link"
                             href="index.php"
-                            id="navbarDropdown1"
                             role="button"
                             aria-expanded="false"
                             >Home</a
@@ -100,7 +99,6 @@
                           <a
                             class="nav-link"
                             href="about.php"
-                            id="navbarDropdown2"
                             role="button"
                             aria-expanded="false"
                             >About Us</a
@@ -110,7 +108,6 @@
                           <a
                             class="nav-link"
                             href="services.php"
-                            id="navbarDropdown3"
                             role="button"
                             aria-expanded="false"
                             >Services</a
@@ -120,7 +117,6 @@
                           <a
                             class="nav-link"
                             href="riders.php"
-                            id="navbarDropdown4"
                             role="button"
                             aria-expanded="false"
                             >Riders</a
@@ -138,22 +134,13 @@
                   <ul
                     class="list-style-none right-btn d-flex align-items-center"
                   >
-                    <li>
-                      <a
-                        class="theme_btn theme_btn_border style-2b d-none d-lg-inline-block"
-                        href="register.php"
-                      >
-                        Create rider account
-                      </a>
-                    </li>
-                     <li>
-                      <a
-                        class="theme_btn theme_btn_border text-white black-btn cta-btn d-none d-lg-inline-block"
-                        href="login.php"
-                      >
-                        Log in
-                      </a>
-                    </li>
+                    <li class="dropdown"><a href="user.php" class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/img/avatar/placeholder.jpg" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                    <li><a class="dropdown-item" href="includes/logout.php">Log out</a></li>
+                                                </ul>
+        </li>
                   </ul>
                   <div
                     class="hamburger-menu d-md-inline-block d-lg-none text-right ml-15"
@@ -191,8 +178,9 @@
           <li>
             <a href="riders.php">Riders</a>
           </li>
-          <li><a href="register.php">Create rider account</a></li>
-          <li><a href="login.php">Log in</a></li>
+          <li><a href="user.php">
+            <img src="assets/img/avatar/placeholder.jpg" alt="Avatar" style="width: 40px; height: 40px">
+          </a></li>
         </ul>
       </nav>
       <!-- side-mobile-menu end -->
