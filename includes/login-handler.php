@@ -22,13 +22,13 @@
             $row = mysqli_fetch_assoc($res);
 
             if(mysqli_num_rows($res) > 0){
-                echo 1;
+                // echo 1;
                 session_start();
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['email'] = $row['email'];
                 // header('location: ../user.php');
             } else{
-                echo 0;
+                // echo 0;
                 $errorMsg = " Please--enter--correct--login--details!";
                 // header('location: ../index.php?error='.$errorMsg);
             }

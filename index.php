@@ -1,4 +1,5 @@
-<?php $activePage = 'index'; require_once('includes/header.php'); ?>
+<?php $activePage = 'index'; require_once('includes/header.php'); 
+?>
   
 
     <main>

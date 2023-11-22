@@ -1,5 +1,5 @@
 <?php require_once('includes/session.php'); ?>
-<?php require_once('includes/user_header.php'); ?>
+<?php $activePage = 'index'; require_once('includes/user_header.php'); ?>
 
     <main>
       <!--slider-area start-->

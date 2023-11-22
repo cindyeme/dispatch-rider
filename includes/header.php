@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>DispatchRider | <?php echo ($activePage === 'index') ? 'Home': echo ($activePage === 'about') ? 'About' : echo ($activePage === 'services') ? 'Services': echo ($activePage === 'riders') ? 'Riders':'' ?></title>
+    <title>DispatchRider 
+      <?php //echo ($activePage === 'index') ? 'Home': 
+            //echo ($activePage === 'about') ? 'About' : 
+            //echo ($activePage === 'services') ? 'Services': 
+            //echo ($activePage === 'riders') ? 'Riders':'' 
+        ?>
+    </title>
     <meta
       name="description"
       content="Access a network of reliable dispatch riders or grow your delivery business with us"

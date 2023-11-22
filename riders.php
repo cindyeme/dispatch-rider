@@ -1,6 +1,5 @@
-
-<?php $activePage = 'riders'; require_once('includes/header.php'); ?>
-  
+<?php require_once('includes/session.php'); ?>
+  <?php $activePage = 'riders'; require_once('includes/user_header.php'); ?>
     <main>
       <!--slider-area start-->
       <section
@@ -63,114 +62,32 @@
         />
         <div class="container">
           <div class="row align-items-center">
+            <?php 
+          
+          $query_riders = "SELECT * FROM dispatch_rider WHERE deleted = 1 ORDER BY id LIMIT 15";
+          $riders_res = mysqli_query($conn, $query_riders);
+
+          while($row = mysqli_fetch_assoc($riders_res)){?>
             <div class="col-lg-4 col-md-6">
               <div class="team-wrapper white-bg pos-rel mb-30">
                 <div class="team-thumb">
                   <img
                     class="w-100"
-                    src="assets/img/team/team-1.jpg"
-                    alt="team memeber"
+                    src="assets/img/team/placeholder.jpg"
+                    alt="Rider"
                   />
                 </div>
                 <div class="team-content text-center">
-                  <h4 class="sect-title">Ebuka Okafor</h4>
-                  <p>0.33 miles away</p>
+                  <h4 class="sect-title"><?=$row['fullname']?></h4>
+                  <p><?=$row['location']?></p>
                   <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
+                    <a href="tel:<?=$row['phone']?>"><i class="fa fa-phone"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-2.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Victor Adigeb</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-3.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Jude Haanongon</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-4.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Kulater Terseer</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-5.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Taiwo Temitope Opeyemi</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="team-wrapper white-bg pos-rel mb-30">
-                <div class="team-thumb">
-                  <img
-                    class="w-100"
-                    src="assets/img/team/team-6.jpg"
-                    alt="team memeber"
-                  />
-                </div>
-                <div class="team-content text-center">
-                  <h4 class="sect-title">Yusuf Aaron</h4>
-                  <p>0.33 miles away</p>
-                  <div class="social-links mt-20">
-                    <a href="tel:"><i class="fa fa-phone"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <?php } ?>
+            
           </div>
           <!--/.row-->
         </div>
